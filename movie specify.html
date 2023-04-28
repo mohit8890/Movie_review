@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>BAHUBALI</title>
+    <link rel="stylesheet"  href="style.css">
+    
+    
+      <meta charset="utf-8" />
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  <!-- </head>     -->
+</head>
+<!-- <link rel="stylesheet" href=""> -->
+<body>
+    <!-- movie image  -->
+<div id="image">
+    <img src="Bahubali The Beginning.png" alt="BAHUBALI" weidth="300" height="300">
+    <img src="Image bahubali 2.png" alt="BAHUBALI" weidth="300" height="300">
+    <img src="Image bahubali 3.png" alt="BAHUBALI" weidth="300" height="300">
+    <img src="Image bahubali 4.png" alt="BAHUBALI" weidth="300" height="300">
+    
+</div>
+<link rel="stylesheet" href="https://Movie.html">
+<!-- movie title  -->
+<ul>
+<div class="Besidesimage">
+    <li><p>Movie Name: BAHUBALI</p></li>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <li><p>Release year: 2015 </p></li>
+    <li><p>Gener</p></li>
+    <li><p>Length: 2H 39min</p></li>
+    <li><p>Language: Telugu, Tamil, Hindi and Malayalam </p></li>
+</div></ul>
+
+
+
+<!-- vertical line -->
+<div class="vl" align="center">
+</div> 
+
+<div class="content" ><!-- align="center"> -->
+    <img src="Bahubali Content.png" size="weidth="1200", height="600">
+</div>
+
+
+<!-- Trailer link 2 -->
+<div class="trailer">
+   <iframe width="35%" height="200%" src="https://www.youtube.com/embed/VdafjyFK3ko" frameborder="200px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<!-- review -->
+<style type="text/css">
+    .review{
+    position: relative;
+    left: 10%;
+    top: -10%;
+}
+.review3{
+    position: relative;
+    left: 10%;
+    top: -10%;
+    font-size: 200%;
+}
+.name{
+    position: relative;
+    left: 15%;
+    top: -0%;
+}
+.name2{
+    position: relative;
+    right: -60%;
+    top: -5%;
+    word-wrap: normal;
+}
+</style>
+<p class="review3"><b>WRITE REVIEW</p></b>
+<form method="post" action="#" autocomplete="off" class="review" name="google-sheet">
+    <div class="review1">
+        <input type="text" name="Name"  placeholder="Your Name *" value="" required=""/>
+    </div>
+
+    <!-- <div class="review2">
+        <input type="textarea" name="Review" rows="4" cols="50" placeholder="Your Review *">
+    </div> -->
+    <textarea id="review" name="review" rows="7" cols="100" placeholder="Your Review *">
+    </textarea>
+    <input type="submit" value="Submit">
+    
+</form>
+
+
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzZ6Gi7XkzPgn7WAxJOdRvDNk5U0YvaqTHSDbUUrlmEEZgCywGfegA9OwyTlAUmdhvK/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+            function fnCheckForRestrictedWords() {  
+            var restrictedWords = new Array("kill", "fight", "slap");  
+            var txtInput = document.getElementById("txtWords").value;  
+            var error = 0;  
+            for (var i = 0; i < restrictedWords.length; i++) {  
+                var val = restrictedWords[i];  
+                if ((txtInput.toLowerCase()).indexOf(val.toString()) > -1) {  
+                    error = error + 1;  
+                }  
+            }  
+  
+            if (error > 0) {  
+                alert('You have entered some restricted words.')  
+            }  
+            else {  
+                
+            }  
+        }
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<p class="name">Bipul Kumar</p>
+<p class="name2">This is our trial review</p>
+<hr>
+<p class="name">Madhur</p>
+<p class="name2">Sivudu (Prabhas) is consumed by a desire to scale the waterfall by <br>
+the edge of his hamlet right from his childhood, much to the chagrin of his doting <br>
+mother. One fine day, he ascends the summit only to find out that it he is the son <br>
+of Amarendra Bahubali, the crown prince of the kingdom of Mahishmati, who gets <br>murdered 
+by his first cousin, Bhalladeva (Rana). </p><hr>
+
+
+<!-- <script type="text/javascript">  
+        function fnCheckForRestrictedWords() {  
+            var restrictedWords = new Array("kill", "fight", "slap");  
+            var txtInput = document.getElementById("txtWords").value;  
+            var error = 0;  
+            for (var i = 0; i < restrictedWords.length; i++) {  
+                var val = restrictedWords[i];  
+                if ((txtInput.toLowerCase()).indexOf(val.toString()) > -1) {  
+                    error = error + 1;  
+                }  
+            }  
+  
+            if (error > 0) {  
+                alert('You have entered some restricted words.')  
+            }  
+            else {  
+                 
+            }  
+        }  
+    </script>  
+ -->
+
+
+
+</body>
+</html>
+
+

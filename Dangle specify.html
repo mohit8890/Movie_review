@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>AVATAR</title>
+    <link rel="stylesheet"  href="style Dangle.css">
+    
+    
+      <meta charset="utf-8" />
+      <!-- <title>Review & Rating System in PHP & Mysql using Ajax</title> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <!-- movie image  -->
+<div id="image">
+    <img src="Dangal.png" alt="BAHUBALI" weidth="300" height="300">
+    <img src="Dangal%20Image%201.png" alt="BAHUBALI" weidth="300" height="300">
+    <img src="Dangal%20Image%202.png" alt="BAHUBALI" weidth="300" height="300">
+    <img src="Dangal%20Image%204.png" alt="BAHUBALI" weidth="300" height="300">
+    
+</div>
+<link rel="stylesheet" href="https://Movie.html">
+<!-- movie title  -->
+<ul>
+<div class="Besidesimage">
+    <li><p>Movie Name: DANGLE</p></li>
+    <!-- <li><p>Rating</p></li> -->
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <li><p>Release year: 2016 </p></li>
+    <li><p>Genre: Sports/Drama/Biographical</p></li>
+    <li><p>Length: 2H 41min</p></li>
+    <li><p>Language:  Hindi </p></li>
+</div></ul>
+
+
+
+<!-- vertical line -->
+<div class="vl" align="center">
+</div> 
+
+<div class="content" ><!-- align="center"> -->
+    <img src="Dangal%20Content.png" size="weidth="1200", height="600">
+</div>
+
+
+<!-- Trailer link 2 -->
+<div class="trailer">
+   <iframe width="35%" height="200%" src="https://www.youtube.com/embed/x_7YlGv9u1g" frameborder="200px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<!-- review -->
+<style type="text/css">
+    .review{
+    position: relative;
+    left: 10%;
+    top: -10%;
+}
+.review3{
+    position: relative;
+    left: 10%;
+    top: -10%;
+    font-size: 200%;
+}
+.name{
+    position: relative;
+    left: 15%;
+    top: -0%;
+}
+.name2{
+    position: relative;
+    right: -60%;
+    top: -5%;
+    word-wrap: normal;
+}
+</style>
+<p class="review3"><b>WRITE REVIEW</p></b>
+<form method="post" action="#" autocomplete="off" class="review" name="google-sheet">
+    <div class="review1">
+        <input type="text" name="Name"  placeholder="Your Name *" value="" required=""/>
+    </div>
+
+    <!-- <div class="review2">
+        <input type="textarea" name="Review" rows="4" cols="50" placeholder="Your Review *">
+    </div> -->
+    <textarea id="review" name="review" rows="7" cols="100" placeholder="Your Review *">
+    </textarea>
+    <input type="submit" value="Submit">
+    
+</form>
+
+
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyw-rLLLvTTw8m1-kD99OAf5FQipAy-cuK44Xq5CWrXqVBJgeFDavQOt1wY3v2z587Eww/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<p class="name">Mohit Yadav</p>
+<p class="name2">This is our trial review</p>
+<hr>
+<p class="name">Bhavishaya</p>
+<p class="name2">Most alien movies that get sequels usually just show the alien's anatomy, tech, <br>and abilities, and the sequel show their home planet and lore. <br>
+Avatar shows everything right off the bat in this sci fi classic that has a great meaning,<br> stunning visuals, and great acting. 
+
+The alien creatures look awesome (my fave is <br>the Hammerhead-stegosaurus thing) and the Na'vi (the main aliens) Might <br>have a simple design, but they have plenty of unique features and an undeniably <br>amazing lore. 
+
+I like how the human's technology is pretty realistic and has a likely <br>chance to exist. The message is really great- do we want to <br>be a militaristic race that move like the aliens in Independence Day? <br>
+
+Overall, I think this is a great movie. Hats off to you, Jim, for making this epic wonder. <br>
+
+ AWESOME GUYS! Avatar re-took Its Box-Office Record as the highest-grossing film <br>EVER! Well done! </p><hr>
+
+
+
+
+
+</body>
+</html>
+
+
